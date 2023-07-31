@@ -9,11 +9,13 @@ header {
 nav ul {
     list-style: none; /* Відключаємо маркери списку */
     padding: 0; /* Відступи всередині списку */
+    text-align: right;
 }
 
 nav ul li {
     display: inline-block; /* Відображаємо пункти меню в одну лінію */
     margin-left: 10px; /* Відступи між пунктами меню */
+    text-align: right;
 }
 
 nav ul li a {
