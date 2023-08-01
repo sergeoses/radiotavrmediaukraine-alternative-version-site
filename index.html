@@ -18,28 +18,6 @@
         </ul>
     </nav>
 </header>
-<audio controls id="radioPlayer">
-    <source src="https://www.hitfm.ua/HitFM.m3u" type="audio/m3u">
-    <!-- Шлях до потоку аудіо "Хіт FM" -->
-    <source src="https://www.radioroks.ua/RadioROKS.m3u" type="audio/m3u">
-    <!-- Шлях до потоку аудіо "Радіо Рокс" -->
-    Your browser does not support the audio element.
-</audio>
-
-<button onclick="playHitFM()">Грати Хіт FM</button>
-<button onclick="playRadioRoks()">Грати Радіо Рокс</button>
-
-<script>
-    const radioPlayer = document.getElementById('radioPlayer');
-
-    function playHitFM() {
-        radioPlayer.src = 'https://www.hitfm.ua/HitFM.m3u';
-    }
-
-    function playRadioRoks() {
-        radioPlayer.src = 'https://www.radioroks.ua/RadioROKS.m3u';
-    }
-</script>
 </body>
 </html>
 
