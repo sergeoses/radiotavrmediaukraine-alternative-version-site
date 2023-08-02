@@ -2,8 +2,10 @@
 header {
     background-color: #f2f2f2; /* Колір фону шапки */
     padding: 10px; /* Відступи всередині шапки */
-    text-align: left; /* Вирівнювання тексту по правій стороні */
+    text-align: center; /* Вирівнювання тексту по центру */
+    border: 2px solid #333; /* Рамка з товщиною 2px та чорним коліром */
 }
+
 /* Стилі для заголовка h1 */
 header h1 {
     color: black; /* Колір тексту заголовка */
@@ -83,3 +85,13 @@ nav ul li a {
         display: none; /* Приховуємо випадаюче меню за замовчуванням */
         flex-direction: column; /* Встановлюємо вертикальне вирівнювання для пунктів меню у випадаючому списку */
     }
+
+    /* Анімація для кнопки меню при активному стані */
+    .menu-btn.active .menu-btn__icon::before {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-btn.active .menu-btn__icon::after {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
