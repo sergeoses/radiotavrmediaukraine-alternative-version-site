@@ -33,12 +33,16 @@ header h1 {
 }
 
 /* Медіа-запит для адаптивної ширини */
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     header {
         text-align: center; /* Вирівнювання тексту по центру */
     }
+@media (max-with: 1000px) {
+     header {
+         text-align: center;
+    }
 
-    nav ul {
+     nav ul {
         text-align: center; /* Вирівнювання тексту по центру */
     }
 
