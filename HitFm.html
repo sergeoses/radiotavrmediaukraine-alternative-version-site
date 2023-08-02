@@ -29,29 +29,6 @@
     const radioPlayer = document.getElementById('radioPlayer');
     radioPlayer.src = 'https://www.hitfm.ua/HitFM.m3u';
 
-radioPlayer.addEventListener('play', () => {
-        radioName.textContent = 'Хіт FM'; // Змінюємо назву радіостанції
-        radioImage.src = 'IMG_0779.jpeg'; // Змінюємо зображення радіостанції
-        radioImage.alt = 'Хіт FM';
-    });
-
-    radioPlayer.addEventListener('pause', () => {
-        // При вимкненні радіостанції, знову встановлюємо початкові значення назви та зображення
-        radioName.textContent = 'Hit FM';
-        radioImage.src = 'IMG_0779.jpeg';
-        radioImage.alt = 'Hit FM';
-    });
-</script>
-<script>
-    const menuBtn = document.querySelector('.menu-btn');
-    const menu = document.querySelector('.menu');
-
-    menuBtn.addEventListener('click', () => {
-        menu.classList.toggle('active');
-    });
-</script>
-
-
 <!-- Ваш контент тут -->
 
 </body>
