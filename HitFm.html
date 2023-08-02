@@ -15,9 +15,12 @@
         </ul>
     </nav>
 </header>
-
+   <div class="radio-info">
+    <h2 id="radioName">Хіт FM</h2>
+    <img src="IMG_0779.jpeg" alt="Хіт FM" id="radioImage">
+</div>
 <audio controls id="radioPlayer">
-    <source src="https://www.hitfm.ua/HitFM.m3u" type="audio/mp3u">
+    <source src="https://www.hitfm.ua/HitFM.m3u" type="audio/m3u">
     <!-- Шлях до потоку аудіо "Хіт FM" -->
     Your browser does not support the audio element.
 </audio>
@@ -25,6 +28,19 @@
 <script>
     const radioPlayer = document.getElementById('radioPlayer');
     radioPlayer.src = 'https://www.hitfm.ua/HitFM.m3u';
+</script>
+radioPlayer.addEventListener('play', () => {
+        radioName.textContent = 'Хіт FM'; // Змінюємо назву радіостанції
+        radioImage.src = 'IMG_0779.jpeg'; // Змінюємо зображення радіостанції
+        radioImage.alt = 'Хіт FM';
+    });
+
+    radioPlayer.addEventListener('pause', () => {
+        // При вимкненні радіостанції, знову встановлюємо початкові значення назви та зображення
+        radioName.textContent = 'Hit FM';
+        radioImage.src = 'IMG_0779.jpeg';
+        radioImage.alt = 'Hit FM';
+    });
 </script>
 <script>
     const menuBtn = document.querySelector('.menu-btn');
