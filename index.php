@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Блог</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ваш блог</title>
     <!-- Підключіть ваші стилі CSS -->
 </head>
 <body>
@@ -42,4 +41,3 @@
     </footer>
 </body>
 </html>
-
