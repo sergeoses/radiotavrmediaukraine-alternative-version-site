@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Ваш блог</title>
+     <link rel="stylesheet" href="style.css">
     <!-- Підключіть ваші стилі CSS -->
 </head>
 <body>
