@@ -95,3 +95,30 @@ nav ul li a {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
+/* Стилі для контейнера аудіоплеєра */
+.audio-player {
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+/* Стилі для аудіо плеєра */
+audio {
+    width: 100%;
+    background-color: #f2f2f2;
+    border: 2px solid #333;
+    padding: 10px;
+}
+
+/* Стилі для кнопок аудіоплеєра */
+audio::-webkit-media-controls-start-playback-button,
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display {
+    display: none !important;
+}
+
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-mute-button {
+    margin-right: 10px;
+}
