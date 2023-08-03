@@ -96,4 +96,29 @@ nav ul li a {
     }
 }
 /* ... Інші стилі ... */
+/* Стилі для контейнера аудіоплеєра */
+.audio-player {
+    position: relative;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+/* Стилі для тексту "Наживо" */
+.live-text {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Змінні стилі для MediaElement.js плеєра */
+.mejs__time-rail,
+.mejs__controls {
+    /* Ваші стилі тут */
+}
 
