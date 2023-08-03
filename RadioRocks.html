@@ -26,6 +26,14 @@
    <span class="live-text">Наживо</span>
 </div>
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+        const audioPlayers = document.querySelectorAll('audio');
+        for (let i = 0; i < audioPlayers.length; i++) {
+            new MediaElement(audioPlayers[i]);
+        }
+    });
+</script>
+<script>
     const radioPlayer = document.getElementById('radioPlayer');
     radioPlayer.src = 'https://www.radioroks.ua/RadioROKS.m3u';
 </script>
