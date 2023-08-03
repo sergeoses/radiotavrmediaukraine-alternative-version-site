@@ -95,51 +95,38 @@ nav ul li a {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
-/* Стилі для контейнера аудіоплеєра */
+/* ... Інші стилі ... */
+
+/* Стилі для аудіо плеєра */
 .audio-player {
+    position: relative; /* Встановлюємо позицію relative для контейнера аудіоплеєра */
     margin: 20px auto;
     max-width: 300px;
 }
+
 /* Стилі для аудіо плеєра */
 audio {
     width: 100%;
     background-color: #f2f2f2;
     border: 2px solid #333;
     padding: 10px;
-    position: relative; /* Додаємо позицію relative для створення абсолютного позиціонування кнопки */
-    border-radius: 5px; /* Додаємо заокруглені кути */
+    border-radius: 5px;
 }
-/* Стилі для кнопок аудіоплеєра */
-audio::-webkit-media-controls-start-playback-button,
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-pause-button,
-audio::-webkit-media-controls-timeline,
-audio::-webkit-media-controls-current-time-display {
-    display: none !important;
-}
-audio::-webkit-media-controls-volume-slider,
-audio::-webkit-media-controls-mute-button {
-    margin-right: 10px;
-}
-/* ... Інші стилі ... */
 
 /* Стилі для кнопки плей */
 audio::-webkit-media-controls-start-playback-button {
-    position: absolute; /* Встановлюємо абсолютне позиціонування */
-    top: 50%; /* Позиціюємо по вертикалі на середині плеєра */
-    left: 50%; /* Позиціюємо по горизонталі на середині плеєра */
-    transform: translate(-50%, -50%); /* Центруємо кнопку на середині плеєра */
+    display: none; /* Приховуємо стандартну кнопку плей браузера */
 }
 
 /* Стилі для тексту "Наживо" */
 .live-text {
     position: absolute; /* Встановлюємо абсолютне позиціонування */
-    top: 0; /* Позиціюємо зверху */
-    right: 0; /* Позиціюємо справа */
+    top: 5px; /* Встановлюємо позицію зверху */
+    right: 10px; /* Встановлюємо позицію справа */
     background-color: red; /* Колір фону тексту */
     color: white; /* Колір тексту */
     padding: 5px 10px; /* Відступи всередині */
-    border-top-left-radius: 5px; /* Заокруглення кутів */
+    border-radius: 5px; /* Заокруглення кутів */
     font-weight: bold; /* Напівжирний шрифт */
+    z-index: 1; /* Встановлюємо зіндекс, щоб надпис був наверху */
 }
-
