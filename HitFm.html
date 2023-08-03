@@ -17,7 +17,7 @@
         </ul>
     </nav>
 </header>
-  <div class="audio-player">
+  <audio controls>
     <span class="live-text">Наживо</span>
     <audio controls id="radioPlayer">
         <source src="https://www.hitfm.ua/HitFM.m3u" type="audio/m3u">
@@ -30,6 +30,16 @@
 <script>
     const radioPlayer = document.getElementById('radioPlayer');
     radioPlayer.src = 'https://www.hitfm.ua/HitFM.m3u';
+</script>
+<script>
+    // Ініціалізуємо аудіоплеєр MediaElement.js для всіх audio елементів на сторінці
+    // Зверніть увагу, що вам також потрібно буде виконати цей скрипт після підключення бібліотеки MediaElement.js
+    document.addEventListener('DOMContentLoaded', function () {
+        const audioPlayers = document.querySelectorAll('audio');
+        for (let i = 0; i < audioPlayers.length; i++) {
+            new MediaElement(audioPlayers[i]);
+        }
+    });
 </script>
 <!-- Ваш контент тут -->
 </body>
