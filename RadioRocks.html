@@ -16,12 +16,13 @@
     </nav>
 </header>
 
-<audio controls id="radioPlayer">
+<div class="audio-player">
+    <audio controls>
     <source src="https://www.radioroks.ua/RadioROKS.m3u" type="audio/m3u">
     <!-- Шлях до потоку аудіо "Радіо Рокс" -->
-    Your browser does not support the audio element.
 </audio>
-
+   <span class="live-text">Наживо</span>
+</div>
 <script>
     const radioPlayer = document.getElementById('radioPlayer');
     radioPlayer.src = 'https://www.radioroks.ua/RadioROKS.m3u';
