@@ -76,10 +76,10 @@ nav ul li a {
     nav ul {
         display: none; /* Приховуємо основне меню */
     }
-@media (max-width: 1000px) {
+@media (max-width: 1920px) {
      body {
-        min-width: 50%;
-        max-width: 100%;
+        min-width: 720px;
+        max-width: 1200px;
 }
     .menu-btn {
         display: block; /* Відображаємо кнопку меню у мобільній версії */
